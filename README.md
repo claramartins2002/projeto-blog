@@ -1,27 +1,21 @@
 # Blog
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.2.
+Blog pessoal desenvolvido com o material de apoio do canal Digital Innovation One.
 
-## Development server
+## Sobre
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+O blog possui uma tela inicial, um feed para adição de comentários públicos e um formulário de envio de email para o dono do blog. 
 
-## Code scaffolding
+## Execução
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Primeiro, entrar na pasta da api `cd api` , depois rodar o comando `npm start` para abrir a api de comentários. O front end pode ser executado no navegador, pelo endereço `http://localhost:4200/`. Para o contato, é preciso rodar a [API Java](https://github.com/claramartins2002/Microsservice-envio-de-email), pois o microsservice de envio de emails depende de outra porta.
 
-## Build
+## Tecnologias utilizadas
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Angular
+- Bootstrap
+- Json Server
+- Spring Boot
+- Spring Mail
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
