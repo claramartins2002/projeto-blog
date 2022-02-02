@@ -1,0 +1,29 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "nome": "Clara Martins",
+      "mensagem": "Hello world!!"
+    },
+    {
+      "id": 2,
+      "nome": "Maria Rios",
+      "mensagem": "Olá mundo!! Esta é minha primeira postagem."
+    },
+    {
+      "id": 3,
+      "nome": "José Augusto",
+      "mensagem": "Que demais =)"
+    },
+    {
+      "id": 4,
+      "nome": "Hugo Campos",
+      "mensagem": "Massa! Estou estudando Angular também, pessoal."
+    },
+    {
+      "nome": "Rafael Cordeiro",
+      "mensagem": "Boa tarde devs! Tudo bem?",
+      "id": 5
+    }
+  ]
+}
