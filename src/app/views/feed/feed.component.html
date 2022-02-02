@@ -1,0 +1,55 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card border-0" style="width: 18rem; margin-top: 5%;">
+                <div class="d-flex justify-content-center">
+                <img class="card-img-top rounded-circle w-75"  src="./../../../assets/perfil.jpg" alt="perfil">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Clara Martins</h5>
+                  <p class="card-text">Desenvolvedora Web Fullstack.</p>
+                  <div class="d-flex justify-content-center">
+
+                  <a href="https://github.com/claramartins2002" target="_blank" class="btn btn-outline-dark">Ver projetos</a>
+                  </div>
+                </div>
+                <hr class="mt-4 mb-4">
+                <h6 class="mb-3 text-monospace text-center">Pesquisar postagem por autor</h6>
+                <input type="text" class="form-control mb-3 w-100" name="filterBy" [(ngModel)]="filterBy">
+                </div>
+              </div>
+        <div class="col-md-8 mt-5" >
+<div>
+    <h3 class="text-center mb-4 text-monospace">Digite seu comentário aqui</h3>
+    <div class="form-group">
+        <label for="nome" class="text-monospace">Nome: </label>
+        <input type="text" id="nome" class="form-control" placeholder="Digite o seu nome" name="nome" [(ngModel)]="novo.nome">
+    </div>
+    <div class="form-group">
+        <label for="mensagem" class="text-monospace" >Mensagem: </label>
+        <textarea id="mensagem" class="form-control" name="mensagem" [(ngModel)]="novo.mensagem" rows="4" cols="30" placeholder="Digite a sua mensagem"></textarea>
+    </div>
+    <div>
+        <div class="d-flex justify-content-end">
+
+        <button class="btn btn-outline-dark mt-2 w-25" (click)="novaPostagem()">Postar</button>
+</div>
+    </div>
+    <hr class="mt-5 mb-5">
+    <h3 class="text-center mb-5 text-monospace">Comentários adicionados</h3>
+    <div class="container">
+        <div class="card mb-4" *ngFor="let post of postagens | filtro : filterBy">
+            <div class="card-header">
+                <h5 class="card-title">{{post.nome}}</h5>
+            </div>
+            <div class="card-body">
+                <p class="card-text">{{post.mensagem}}</p>
+            </div>
+
+        </div>
+    </div>
+
+
+</div>
+        </div>
+    </div>
